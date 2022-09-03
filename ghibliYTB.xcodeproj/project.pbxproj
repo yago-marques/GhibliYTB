@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DF26A5E228C2C505002265DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5E128C2C505002265DA /* AppDelegate.swift */; };
 		DF26A5E428C2C505002265DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5E328C2C505002265DA /* SceneDelegate.swift */; };
-		DF26A5E628C2C505002265DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5E528C2C505002265DA /* ViewController.swift */; };
-		DF26A5E928C2C505002265DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF26A5E728C2C505002265DA /* Main.storyboard */; };
 		DF26A5EB28C2C506002265DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF26A5EA28C2C506002265DA /* Assets.xcassets */; };
 		DF26A5EE28C2C506002265DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF26A5EC28C2C506002265DA /* LaunchScreen.storyboard */; };
+		DF26A5F628C2C9AD002265DA /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5F528C2C9AD002265DA /* AnimationViewController.swift */; };
+		DF26A5FB28C2D0E0002265DA /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A5FA28C2D0E0002265DA /* View.swift */; };
+		DF26A60428C2D268002265DA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A60328C2D268002265DA /* CardView.swift */; };
+		DF26A60728C2D3B6002265DA /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF26A60628C2D3B6002265DA /* ViewCoding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF26A5DE28C2C505002265DA /* ghibliYTB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ghibliYTB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF26A5E128C2C505002265DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF26A5E328C2C505002265DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DF26A5E528C2C505002265DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DF26A5E828C2C505002265DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF26A5EA28C2C506002265DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF26A5ED28C2C506002265DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF26A5EF28C2C506002265DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF26A5F528C2C9AD002265DA /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		DF26A5FA28C2D0E0002265DA /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		DF26A60328C2D268002265DA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DF26A60628C2D3B6002265DA /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,81 @@
 		DF26A5E028C2C505002265DA /* ghibliYTB */ = {
 			isa = PBXGroup;
 			children = (
-				DF26A5E128C2C505002265DA /* AppDelegate.swift */,
-				DF26A5E328C2C505002265DA /* SceneDelegate.swift */,
-				DF26A5E528C2C505002265DA /* ViewController.swift */,
-				DF26A5E728C2C505002265DA /* Main.storyboard */,
-				DF26A5EA28C2C506002265DA /* Assets.xcassets */,
-				DF26A5EC28C2C506002265DA /* LaunchScreen.storyboard */,
+				DF26A60028C2D1FC002265DA /* Resources */,
+				DF26A5FF28C2D1ED002265DA /* Appplication */,
+				DF26A5FE28C2D1DF002265DA /* Sources */,
 				DF26A5EF28C2C506002265DA /* Info.plist */,
 			);
 			path = ghibliYTB;
+			sourceTree = "<group>";
+		};
+		DF26A5F928C2D0CE002265DA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A5FA28C2D0E0002265DA /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF26A5FC28C2D1B9002265DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A5FD28C2D1C0002265DA /* Animation */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF26A5FD28C2D1C0002265DA /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A60128C2D243002265DA /* Components */,
+				DF26A5F528C2C9AD002265DA /* AnimationViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		DF26A5FE28C2D1DF002265DA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A60528C2D3A5002265DA /* Protocols */,
+				DF26A5F928C2D0CE002265DA /* Extensions */,
+				DF26A5FC28C2D1B9002265DA /* View */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DF26A5FF28C2D1ED002265DA /* Appplication */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A5E128C2C505002265DA /* AppDelegate.swift */,
+				DF26A5E328C2C505002265DA /* SceneDelegate.swift */,
+				DF26A5EC28C2C506002265DA /* LaunchScreen.storyboard */,
+			);
+			path = Appplication;
+			sourceTree = "<group>";
+		};
+		DF26A60028C2D1FC002265DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A5EA28C2C506002265DA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF26A60128C2D243002265DA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A60328C2D268002265DA /* CardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DF26A60528C2D3A5002265DA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DF26A60628C2D3B6002265DA /* ViewCoding.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +197,6 @@
 			files = (
 				DF26A5EE28C2C506002265DA /* LaunchScreen.storyboard in Resources */,
 				DF26A5EB28C2C506002265DA /* Assets.xcassets in Resources */,
-				DF26A5E928C2C505002265DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF26A5E628C2C505002265DA /* ViewController.swift in Sources */,
+				DF26A5FB28C2D0E0002265DA /* View.swift in Sources */,
+				DF26A60728C2D3B6002265DA /* ViewCoding.swift in Sources */,
+				DF26A5F628C2C9AD002265DA /* AnimationViewController.swift in Sources */,
 				DF26A5E228C2C505002265DA /* AppDelegate.swift in Sources */,
 				DF26A5E428C2C505002265DA /* SceneDelegate.swift in Sources */,
+				DF26A60428C2D268002265DA /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DF26A5E728C2C505002265DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF26A5E828C2C505002265DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DF26A5EC28C2C506002265DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +356,6 @@
 				INFOPLIST_FILE = ghibliYTB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +383,6 @@
 				INFOPLIST_FILE = ghibliYTB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
